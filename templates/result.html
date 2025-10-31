@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f7f7f7;
+            text-align: center;
+            padding-top: 40px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Prediction Result</h2>
+        <p><b>File:</b> {{ filename }}</p>
+        <p><b>Predicted Class:</b> {{ predicted_class }}</p>
+        <p><b>Confidence:</b> {{ confidence }}%</p>
+        <a href="/">🔙 Try Another Image</a>
+    </div>
+</body>
+</html>

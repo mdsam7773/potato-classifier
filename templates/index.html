@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <title>Potato Disease Classifier</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f7f7f7;
+            text-align: center;
+            padding-top: 40px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input[type=file] {
+            margin: 10px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>🍃 Potato Disease Classifier</h2>
+    <form method="POST" action="/predict" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" required>
+        <br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
