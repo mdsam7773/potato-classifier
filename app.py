@@ -11,7 +11,7 @@ os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
 app = Flask(__name__)
 
 # Load your trained model
-model = tf.keras.models.load_model("C:\\Users\\HP\\Desktop\\sam\\apis\\my_model.keras")
+model = tf.keras.models.load_model("my_model.keras")
 
 # Define your class names
 class_name = ['Early Blight', 'Late Blight', 'Healthy']
